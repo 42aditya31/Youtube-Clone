@@ -1,3 +1,5 @@
+import Body from "./components/Body"
+import Header from "./components/Header"
 
 
 function App() {
@@ -5,7 +7,9 @@ function App() {
 
   return (
     <>
-     <h1 className="bg-pink-300 text-9xl font-bold ">hello react </h1>
+    
+     <Header/>
+     <Body/>
     </>
   )
 }
