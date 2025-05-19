@@ -1,8 +1,12 @@
 import React from "react";
 import { Home, Music2, Gamepad2, Book, Film, Expand } from "lucide-react"; // Optional icons
+import { useSelector } from "react-redux";
 
 const SideBar = () => {
-  return (
+
+  const isMenuOpen = useSelector((store)=> store.nav.isMenuOpen)
+
+  return !isMenuOpen ? null : (
     <div className="w-56 -z-10 h-screen overflow-y-auto bg-white shadow-sm p-4 border-r border-gray-200 text-sm">
       {/* Section 1 */}
       <div className="mb-4">

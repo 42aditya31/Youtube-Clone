@@ -1,12 +1,19 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../store/navSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+
+  const toggleMenuHandler = () => {
+    dispatch(toggleMenu());
+  };
   return (
     <div className="w-full h-16 shadow-md flex  justify-between">
-
       {/* left side */}
       <div className="left flex flex-row h-16 m-2  align-middle ">
         <img
+          onClick={() => toggleMenuHandler()}
           className="h-8 m-3 cursor-pointer"
           src="https://cdn-icons-png.flaticon.com/128/12314/12314149.png"
           alt="Menu Hamburg"
