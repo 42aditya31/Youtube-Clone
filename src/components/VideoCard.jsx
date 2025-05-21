@@ -5,7 +5,7 @@ const VideoCard = ({ info }) => {
   const { snippet, statistics } = info;
 
   return (
-    <div className="p-2 m-2 w-72 shadow-lg">
+    <div className="p-2 m-2 w-64 shadow-lg">
       <img className="rounded-lg" alt="thumbnail" src={snippet?.thumbnails?.medium?.url} />
       <ul>
         <li className="font-bold py-2">{snippet?.localized?.title}</li>
