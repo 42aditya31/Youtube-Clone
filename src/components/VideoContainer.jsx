@@ -9,19 +9,19 @@ const VideoContainer = () => {
 
   const getVideos = async () => {
     const response = await fetch(YOUTUBE_VIDEO_API);
-    console.log("Status Code:", response.status); // Helpful log
+    // console.log("Status Code:", response.status); // Helpful log
     const json = await response.json();
     setVideoData(json.items)
 
-    console.log(videoData);
+    // console.log(videoData);
   }
   
   useEffect(() => {
-    // getVideos();
-  });
+    getVideos();
+  },[]);
   return (
     <div>
-      <VideoCard />
+      <VideoCard  info={videoData[0]}/>
     </div>
   );
 };
