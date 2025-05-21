@@ -1,6 +1,7 @@
 import { Book, Expand, Film, Gamepad2, Home, Music2 } from "lucide-react"; // Optional icons
 import React from "react";
 import { useSelector } from "react-redux";
+import {Link} from "react-router-dom"
 
 const SideBar = () => {
   const isMenuOpen = useSelector((store) => store.nav.isMenuOpen);
@@ -11,7 +12,7 @@ const SideBar = () => {
       <div className="mb-4">
         <li className="flex items-center font-bold gap-3 px-3 py-2 rounded-md cursor-pointer hover:bg-gray-100">
           <Home size={18} />
-          <span>Home</span>
+          <span><Link to="/">Home </Link></span>
         </li>
         <li className="flex items-center font-bold gap-3 px-3 py-2 rounded-md cursor-pointer hover:bg-gray-100">
           <Music2 size={18} />

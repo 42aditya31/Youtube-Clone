@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../store/navSlice";
+// import { Link } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -18,14 +19,16 @@ const Header = () => {
           src="https://cdn-icons-png.flaticon.com/128/12314/12314149.png"
           alt="Menu Hamburg"
         />
-        <img
+        {/* <Link to="/"> */}
+        <img 
           className="pl-2 h-12 cursor-pointer"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY2eA040yZrBlL_UmreamLAN_iBh7Ldd0_og&s"
           alt="Youtube Logo"
         />
+        {/* </Link> */}
       </div>
 
-      {/* middle side */}
+    
       <div className="Middle align-middle my-auto">
         <input
           type="text"
