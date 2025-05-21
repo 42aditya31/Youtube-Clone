@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const ButtonList = () => {
   return (
-    <div>
+    <div className=" overflow-x-hidden ">
       <Button label="All" />
       <Button label="Trending" />
       <Button label="Music" />
@@ -16,8 +16,8 @@ const ButtonList = () => {
       <Button label="Technology" />
       <Button label="Comedy" />
       <Button label="Dance" />
-      <Button label="Coding" />
-      <Button label="AI" />
+      {/* <Button label="Coding" />
+      <Button label="AI" /> */}
     </div>
   );
 };
