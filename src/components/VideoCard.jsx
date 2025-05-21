@@ -12,7 +12,7 @@ const VideoCard = ({ info }) => {
         <li>{snippet?.channelTitle}</li>
        <div className="flex gap-x-6">
        <li>{statistics?.viewCount} <span className="font-bold ">views</span></li>
-       <li className="bg-gray-100 rounded-md p-[4px] cursor-pointer"> 👍🏻 {statistics?.likeCount}  </li>
+       <li className="bg-gray-100 rounded-md cursor-pointer"> ❤️ {statistics?.likeCount}  </li>
        </div>
       </ul>
     </div>

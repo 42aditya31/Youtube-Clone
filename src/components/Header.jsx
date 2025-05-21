@@ -40,7 +40,7 @@ const Header = () => {
       {/* right Side */}
       <div className="Right ">
         <img
-          className="h-12 mt-2 mr-6 py-auto"
+          className="h-8 mt-3 mr-6 py-auto"
           src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"
           alt=""
         />
