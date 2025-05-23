@@ -29,8 +29,9 @@ const WatchVideoPage = () => {
             allowFullScreen
           ></iframe>
          </div>
-         <div className="w-full">
+         <div className="w-full ">
           <LiveChat/>
+
          </div>
         </div>
         <CommentContainer />
